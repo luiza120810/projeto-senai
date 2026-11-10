@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to bottom, #a70f0f, rgb(97, 25, 25));  /* fundo escuro */
+    color: #f8fafc;              /* texto claro = bom contraste */
+    min-height: 100vh;
+
+
+    /* Flexbox: empilha tudo em coluna e centraliza */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/* ===== Título ===== */
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: #facc15;
+    text-align: center;
+    font-family: fantasy;
+}
+
+
+/* ===== Conteúdo principal ===== */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+
+/* ===== Imagem ===== */
+.area-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6b333;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+.area-imagem img {
+    width: 220px;
+    max-width: 100%;
+}
+
+
+/* ===== Palavra e mensagens ===== */
+.area-palavra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#palavra {
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+
+#mensagem {
+    font-size: 1.3rem;
+    font-weight: bold;
+    min-height: 1.5rem;
+    text-align: center;
+}
+
+
+#erros {
+    color: #cbd5e1;
+}
+
+
+.vitoria {
+    color: #4ade80;
+}
+
+
+.derrota {
+    color: #f87171;
+}
+
+
+/* ===== Teclado ===== */
+.teclado {
+    display: flex;
+    flex-wrap: wrap;          /* os botões quebram de linha quando falta espaço */
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.letra {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #d2a904;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+.letra:hover {
+    background-color: #b35606;
+}
+
+
+/* Botão já clicado (desativado) */
+.letra:disabled {
+    background-color: #8e1b02;
+    color: #cbd5e1;
+    cursor: not-allowed;
+}
+
+
+/* ===== Botão reiniciar ===== */
+.area-reiniciar {
+    display: flex;
+    justify-content: center;
+}
+
+
+#reiniciar {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #cfc105;
+    color: #1e293b;
+    cursor: pointer;
+}
+
+
+#reiniciar:hover {
+    background-color: #eab308;
+}
+
+
+/* ===== Telas pequenas (celular) ===== */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
+    #palavra {
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+    }
+
+
+    .letra {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+
+    .area-imagem img {
+        width: 160px;
+    }
+}
