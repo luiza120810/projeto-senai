@@ -11,8 +11,6 @@ body {
     color: #f8fafc;              /* texto claro = bom contraste */
     min-height: 100vh;
 
-
-    /* Flexbox: empilha tudo em coluna e centraliza */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +18,11 @@ body {
     padding: 20px;
 }
 
-
-/* ===== Título ===== */
 header {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
 
 h1 {
     font-size: 3rem;
