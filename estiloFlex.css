@@ -144,6 +144,7 @@ main {
 .area-reiniciar {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 
@@ -163,6 +164,37 @@ main {
     background-color: #eab308;
 }
 
+.hidden {
+    display: none !important;
+}
+
+#tela-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#btn-comecar {
+    background-color:#eab308;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-comecar:hover {
+    background-color: #b35606;
+}
+
+#palavra-secreta {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid #eab308;
+    border-radius: 4px;
+    padding: 8px;
+}
 
 /* ===== Telas pequenas (celular) ===== */
 @media (max-width: 500px) {
